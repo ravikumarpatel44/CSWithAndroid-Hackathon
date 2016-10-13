@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_instruction"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sandeepkumar.appagame.instruction">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Welcome to Instructions"
+        android:textSize="25dp"
+        android:background="#000000"
+        android:textAlignment="center"
+        android:textColor="#d2d2d2"
+        />
+
+    <ViewFlipper
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/viewflipper"
+        >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/diceimg"
+        android:id="@+id/imginstruct"
+        />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/view2"
+            android:src="@drawable/dice1"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/view3"
+            android:src="@drawable/dice2"
+            />
+
+
+    </ViewFlipper>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/viewflipper"
+       >
+       <Button
+           android:layout_width="100dp"
+           android:layout_height="60dp"
+           android:layout_marginLeft="25dp"
+           android:id="@+id/previous"
+           android:text="prev"
+           />
+       <Button
+           android:layout_width="100dp"
+           android:text="Home"
+           android:id="@+id/home"
+           android:layout_height="60dp"
+           />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="next"
+        android:id="@+id/next"
+        />
+
+   </LinearLayout>
+</RelativeLayout>

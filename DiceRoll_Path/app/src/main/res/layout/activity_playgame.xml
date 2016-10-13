@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#663399"
+    >
+
+<GridView
+    android:id="@+id/gridview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnWidth="50dp"
+    android:numColumns="10"
+    android:gravity="center"
+    android:listSelector="#003434"
+    />
+<Button
+    android:layout_width="150dp"
+    android:layout_height="60dp"
+    android:layout_marginTop="380dp"
+    android:layout_marginLeft="10dp"
+    android:textAlignment="center"
+    android:text="Start"
+    android:onClick="findShortestPath"
+    android:id="@+id/start"
+
+    />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginLeft="180dp"
+        android:textAlignment="center"
+        android:text="Shuffle"
+
+        android:id="@+id/reset"
+
+        />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/start"
+        android:layout_marginLeft="60dp"
+        android:src="@drawable/dice1"
+        android:id="@+id/lido"
+        />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/reset"
+        android:text="Roll"
+        android:id="@+id/roll"
+        android:layout_marginLeft="205dp"/>
+
+</RelativeLayout>
